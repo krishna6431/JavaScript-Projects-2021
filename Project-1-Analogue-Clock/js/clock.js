@@ -63,4 +63,25 @@ function drawNumber(ctx, radius) {
 }
 
 //Drawing Time and Hands for Clock
-function
+function drawTime(ctx, radius) {
+
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+
+    //calculation angle for hour
+    hour = hour % 12;
+    hour = (hour * Math.PI / 6) + (minute * Math.PI / (6 * 60)) + (second * Math.PI / (6 * 60 * 60));
+    drawHand(ctx, hour, radius * 0.5, radius * 0.07);
+
+    //calculation angle for minute
+    minute = (minute * Math.PI / (30)) + (second * Math.PI / (30 * 60));
+    drawHand(ctx, minute, radius * 0.8, radius * 0.07);
+
+    //calculation angle for second
+
+    second = (second * Math.PI / (30));
+    drawHand(ctx, second, radius * 0.9, radius * 0.7);
+
+}
