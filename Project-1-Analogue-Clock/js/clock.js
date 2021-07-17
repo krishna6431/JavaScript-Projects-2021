@@ -7,7 +7,10 @@ var radius = canvas.height / 2;
 //move canvas to x,y axis 
 ctx.translate(radius, radius);
 radius = radius * 0.90;
-drawClock();
+// drawClock();
+
+// making clock working   
+setInterval(drawClock, 1000);
 
 // function olderdrawClock() {
 //     // arc(x, y, r, startangle, endangle) - creates an arc / curve.To create a circle with arc(): Set start angle to 0 and end angle to 2 * Math.PI.The x and y parameters define the x - and y - coordinates of the center of the circle.The r parameter defines the radius of the circle
