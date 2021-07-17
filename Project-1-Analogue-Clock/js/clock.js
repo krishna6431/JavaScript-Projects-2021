@@ -85,3 +85,15 @@ function drawTime(ctx, radius) {
     drawHand(ctx, second, radius * 0.9, radius * 0.7);
 
 }
+
+//drawing Hands
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.linecap = "round";
+    ctx.moveto(0, 0);
+    ctx.rotate(pos);
+    ctx.lineto(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
