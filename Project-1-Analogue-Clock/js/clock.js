@@ -19,6 +19,7 @@ drawClock();
 function drawClock() {
     drawFace(ctx, radius);
     drawNumber(ctx, radius);
+    drawTime(ctx, radius);
 }
 
 function drawFace(ctx, radius) {
@@ -77,12 +78,12 @@ function drawTime(ctx, radius) {
 
     //calculation angle for minute
     minute = (minute * Math.PI / (30)) + (second * Math.PI / (30 * 60));
-    drawHand(ctx, minute, radius * 0.8, radius * 0.07);
+    drawHand(ctx, minute, radius * 0.8, radius * 0.050);
 
     //calculation angle for second
 
     second = (second * Math.PI / (30));
-    drawHand(ctx, second, radius * 0.9, radius * 0.7);
+    drawHand(ctx, second, radius * 0.9, radius * 0.018);
 
 }
 
@@ -90,10 +91,10 @@ function drawTime(ctx, radius) {
 function drawHand(ctx, pos, length, width) {
     ctx.beginPath();
     ctx.lineWidth = width;
-    ctx.linecap = "round";
-    ctx.moveto(0, 0);
+    ctx.lineCap = "round";
+    ctx.moveTo(0, 0);
     ctx.rotate(pos);
-    ctx.lineto(0, -length);
+    ctx.lineTo(0, -length);
     ctx.stroke();
     ctx.rotate(-pos);
 }
