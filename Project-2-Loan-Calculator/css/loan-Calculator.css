@@ -1,1 +1,53 @@
-/* this is css file   */
+/* // < !--this project is created by krishna6431-- > */
+body{
+  background-image: url("../resources/bg.jpg");
+}
+#loancal{
+    border-radius: 8px;
+    width: 375px;
+    height:295px;
+    background-color: rgb(164, 35, 31);
+    color: #fff;
+    margin-left:35vw;
+    margin-right:35vw;
+    margin-top: 15vw;
+    padding-left: 90px;
+    padding-right:20px;
+}
+
+#months{
+    border-radius: 5px;
+    margin-left:3px;
+    width: 175px;
+    height: 20px;
+}
+
+#amount{
+     border-radius: 5px;
+     width: 175px;
+    height: 20px;
+}
+
+#interestRate{
+     border-radius: 5px;
+    margin-left: 7px;
+    width:175px;
+    height:20px;
+}
+
+#computed{
+    position:relative;
+  width: 300px;
+  padding: 10px;
+  border: 5px solid rgb(17, 236, 98);
+  border-radius:5px;
+  margin-bottom: 2vw; 
+  display:flex;
+  justify-content: center;
+}
+#payment{
+    font-size: 20px;
+}
+h1{
+    font-size: 40px;
+}
