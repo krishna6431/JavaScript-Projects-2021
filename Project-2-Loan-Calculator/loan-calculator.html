@@ -1,15 +1,28 @@
 <!-- this project is created by krishna6431 -->
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/loan-calculator.css">
-        <title>Loan Calculator By Krishna</title>
-    </head>
-    <body>
-        <div id="loancal">
-            <h1>Loan Calculator</h1>
+
+<head>
+    <meta charset="utf-8">
+    <title>Loan Calculator By Krishna</title>
+    <link rel="icon" href="resources/ico.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/loan-calculator.css">
+</head>
+
+<body>
+    <div id="loancal">
+        <h1>Loan Calculator</h1>
+        <p>Loan Amount: $ <input id="amount" type="number" min="1" max="5000000" onchange="computeLoan()" </p>
+        <p>Inerest Rate: % <input id="interestRate" type="number" min="0" max="100" value="10" step=".1"
+                onchange="computeLoan()" </p>
+        <p>Months To Pay: <input id="months" type="number" min="1" max="300" value="1" step="1" onchange="computeLoan()"
+                </p>
+        <div id="computed">
+            <h2 id="payment" </h2>
         </div>
-        <script type="text/javascript" src="js/loan-calculator.js"></script>
-    </body>
+
+    </div>
+    <script type="text/javascript" src="js/loan-calculator.js"></script>
+</body>
+
 </html>
