@@ -1,0 +1,45 @@
+/* <!-- // < !--this project is created by krishna6431 --> */
+
+body{
+    background-image: url("../resources/bg.jpg");
+}
+div{
+    text-align: center;
+}
+
+h1{
+    font-size: 80px;
+    font-family:fantasy;
+    color:rgb(27, 52, 216);
+    border: 5px solid white;
+}
+
+button{
+    width:250px;
+    height:80px;
+    background-color:blue;
+    color: white;
+    border:2px solid;
+    border-radius: 8px;
+    font-size:20px;
+}
+
+p{
+    font-size:35px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(2, 71, 10);
+}
+
+#quoteOutput{
+    color:#131012;
+    font-weight: bold;
+}
+
+#authorOutput{
+    color:rgb(245, 10, 10);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 3;
+}
+button:hover{
+    background-color:green;
+}
