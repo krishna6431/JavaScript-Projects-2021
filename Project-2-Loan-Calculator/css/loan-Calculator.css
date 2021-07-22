@@ -51,3 +51,23 @@ body{
 h1{
     font-size: 40px;
 }
+
+@media screen 
+  and (device-width: 720px) 
+  and (device-height: 1600px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait) {
+
+#loancal{
+    border-radius: 8px;
+    width: 375px;
+    height:295px;
+    background-color: rgb(164, 35, 31);
+    color: #fff;
+    margin-left:25vw;
+    margin-right:35vw;
+    margin-top: 75vw;
+    padding-left: 90px;
+    padding-right:20px;
+}
+}
