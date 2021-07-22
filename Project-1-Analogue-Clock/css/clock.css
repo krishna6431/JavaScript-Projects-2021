@@ -1,7 +1,6 @@
 /* // < !--this project is created by krishna6431-- > */
 body{
-    background-color: #000;
-    background-repeat: no-repeat;
+    background-image: url("../resources/bg.jpg");
     background-position:relative;
     height:100%;
     width:100%;
