@@ -36,7 +36,7 @@ body{
 }
 
 #computed{
-    position:relative;
+  position:relative;
   width: 300px;
   padding: 10px;
   border: 5px solid rgb(17, 236, 98);
@@ -46,7 +46,7 @@ body{
   justify-content: center;
 }
 #payment{
-    font-size: 20px;
+    font-size: 18px;
 }
 h1{
     font-size: 40px;
