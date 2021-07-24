@@ -1,0 +1,119 @@
+/* <!-- // < !--this project is created by krishna6431 --> */
+ html {
+    position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+    min-width: 100%;
+	min-height: 100%;
+}
+
+body{
+     position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url("../resources/bg.jpg");
+	min-width: 100%;
+	min-height: 100%;
+	backdrop-filter: blur(8px);
+	background-size: cover;
+}
+
+.container{
+    width:375px;
+    height: 525px;
+    margin-left:35vw;
+    margin-right:30vw;
+    margin-top:7vw;
+    background-image: url("../resources/container.jpg");
+    border: 5px solid yellow;
+    border-radius: 8px;
+   
+    /* padding-left:30px; */
+}
+#title{
+    display:flex;
+    justify-content:center;
+    font-size :45px;
+    padding-top:30px;
+    /* background-color: aqua; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: maroon;
+    text-shadow: 2px 2px red;
+
+}
+#cm{
+    width:150px;
+    height:25px;
+    margin-top:30px;
+    margin-left:15px;
+    border:2px solid #000;
+    border-radius: 5px;
+}
+
+#kg{
+    width:150px;
+    height:25px;
+    margin-top:30px;
+    margin-left:15px;
+    border:2px solid #000;
+    border-radius: 5px;
+}
+
+#weightguide{
+    width:375px;
+    /* margin-left:40px; */
+    margin-top:15px;
+    display: inline-block;
+
+}
+
+#result{
+    font-size:35px;
+    margin-left:65px;
+    color:blue;
+    text-shadow: 2px 1px white;
+}
+
+#submit{
+   width: 150px;
+   height: 45px;
+   margin-left: 110px;
+   margin-top: 50px;
+   font-family:'Crimson Pro';
+   border: 4px solid rgb(245, 244, 241);
+   border-radius:8px;
+   background-color:blue;
+   color: #fff;
+   font-size: 25px;
+   text-shadow: 2px 1px rgb(255, 210, 62);
+}
+
+span{
+    font-family:'Literata';
+    font-weight: bold;
+    text-shadow: 1px 1px white;
+    margin-left: 15px;
+}
+.span{
+    display:inline-flex;
+    justify-content: center;
+    margin-left: 75px;
+    font-family:'Literata';
+    font-weight: bold;
+    text-shadow: 1px 1px white;
+
+}
+h2{
+  display:flex;
+  justify-content: center;
+  color:red;
+  text-shadow: 2px 1px white;
+}
+
+.blur{
+      width:375px;
+     height: 525px;
+     backdrop-filter: blur(4px);
+}
