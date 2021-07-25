@@ -18,7 +18,7 @@ function bmiCalculator() {
         check = "UnderWeight";
     }
     else if (bmi >= 18.6 && bmi <= 24.9) {
-        check = "Normal Range";
+        check = "Normal";
     }
     else {
         check = "OverWeight";
