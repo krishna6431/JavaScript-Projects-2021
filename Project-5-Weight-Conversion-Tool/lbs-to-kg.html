@@ -1,0 +1,30 @@
+<!-- /* // < !--this project is created by krishna6431 */ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="resources/ico.png" type="image/x-icon">
+    <title>KG-LBS Convertor By Krishna</title>
+    <link rel="stylesheet" type="text/css" href="css/lbs-to-kg.css" </head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="title">Weight Convertor (LBS->KG)</h1>
+        <p class="label">Enter the Weight in Pounds:</p>
+
+        <p id="input">
+            <label>Pound(LBS) &nbsp;</label>
+            <input id="inputPounds" type="number" placeholder="Pound(LBS)" oninput="weightConverter2(this.value)"
+                onchange="weightConverter2(this.value)">
+        </p>
+        <p class="label">
+            Your Weight in Kilograms is: <br>
+        </p>
+        <span id="outputKilograms"></span>
+    </div>
+    <script type=" text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
