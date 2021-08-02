@@ -10,6 +10,7 @@ var dx = 2;
 var dy = -2;
 //creating ball for game 
 function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.beginPath(); //begin path from drawing ball
     // arc(x, y, radius, startAngle, endAngle, false / true(direction))
     ctx.arc(x, y, 20, 0, Math.PI * 2, false);
