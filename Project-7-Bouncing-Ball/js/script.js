@@ -15,6 +15,24 @@ var paddleX = (canvas.width - paddleWidth) / 2;
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 
+function keyDownHandler(e) {
+    if (e.keyCode == 39) {
+        rightPressed = true;
+    }
+    else if (e.keyCode == 37) {
+        leftPressed = true;
+    }
+}
+
+function keyDownHandler(e) {
+    if (e.keyCode == 39) {
+        rightPressed = false;
+    }
+    else if (e.keyCode == 37) {
+        leftPressed = false;
+    }
+}
+
 function drawBall() {
     ctx.beginPath(); //begin path from drawing ball
     // arc(x, y, radius, startAngle, endAngle, false / true(direction))
