@@ -12,6 +12,9 @@ var paddleHeight = 12;
 var paddleWidth = 72;
 var paddleX = (canvas.width - paddleWidth) / 2;
 
+document.addEventListener("keydown", keyDownHandler, false);
+document.addEventListener("keyup", keyUpHandler, false);
+
 function drawBall() {
     ctx.beginPath(); //begin path from drawing ball
     // arc(x, y, radius, startAngle, endAngle, false / true(direction))
