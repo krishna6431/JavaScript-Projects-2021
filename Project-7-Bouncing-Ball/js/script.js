@@ -60,15 +60,30 @@ function draw() {
     if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
         dx = -dx;
     }
-    //check for top and bottom wall collision
-    if (y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
+    //check for top wall collision
+    if (y + dy < ballRadius) {
         dy = -dy;
     }
+    //check for bottom ball collision
+    else if (y + dy > canvas.height - ballRadius) {
+        if (x > paddleX && x < paddleX + paddleWidth) {
+            dy = -dy;
+        }
+        else {
+            alert("Game Over!!!");
+            x = canvas.width / 2;
+            y = canvas.height - 30;
+            document.location.reload(true);
+        }
+    }
+
+
+
     if (rightPressed && paddleX < canvas.width - paddleWidth) {
-        paddleX += 7;
+        paddleX += 5;
     }
     else if (leftPressed && paddleX > 0) {
-        paddleX -= 7;
+        paddleX -= 5;
     }
     x += dx;
     y += dy;
