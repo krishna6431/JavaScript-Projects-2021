@@ -11,6 +11,8 @@ var dy = -2;
 var paddleHeight = 12;
 var paddleWidth = 72;
 var paddleX = (canvas.width - paddleWidth) / 2;
+var rightPressed = false;
+var leftPressed = false;
 
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
@@ -24,7 +26,7 @@ function keyDownHandler(e) {
     }
 }
 
-function keyDownHandler(e) {
+function keyUpHandler(e) {
     if (e.keyCode == 39) {
         rightPressed = false;
     }
@@ -61,6 +63,12 @@ function draw() {
     //check for top and bottom wall collision
     if (y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
         dy = -dy;
+    }
+    if (rightPressed && paddleX < canvas.width - paddleWidth) {
+        paddleX += 7;
+    }
+    else if (leftPressed && paddleX > 0) {
+        paddleX -= 7;
     }
     x += dx;
     y += dy;
