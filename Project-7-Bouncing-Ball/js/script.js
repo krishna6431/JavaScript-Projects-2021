@@ -11,6 +11,7 @@ var dy = -2;
 var paddleHeight = 12;
 var paddleWidth = 72;
 var paddleX = (canvas.width - paddleWidth) / 2;
+
 function drawBall() {
     ctx.beginPath(); //begin path from drawing ball
     // arc(x, y, radius, startAngle, endAngle, false / true(direction))
@@ -20,6 +21,13 @@ function drawBall() {
     ctx.closePath(); // close of path 
 }
 
+function drawPaddle() {
+    ctx.beginPath(); //begin path from drawing ball
+    ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
+    ctx.fillStyle = "blue"; //give color to shape paddle
+    ctx.fill(); // fill color to shape
+    ctx.closePath(); // close of path 
+}
 
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height); //clear canvas
