@@ -32,6 +32,7 @@ function drawPaddle() {
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height); //clear canvas
     drawBall();
+    drawPaddle();
     //check for left and right wall collision
     if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
         dx = -dx;
